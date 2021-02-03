@@ -92,6 +92,19 @@ main .container .cards .card:hover .layover {
 main .container .cards .card img {
   display: block;
 }
+main .container-large {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #B8DAE4;
+}
+main .container-large img {
+  display: block;
+  max-width: 100%;
+}
+main .container-large .description {
+  color: #055477;
+}
 
 footer {
   display: flex;
