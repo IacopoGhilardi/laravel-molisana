@@ -1,17 +1,20 @@
 main {
     background-image: url("../img/fondo-pag-speciali.jpg");
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     display: flex;
     justify-content: center;
+    h3 {
+        color: darken($aColor, 60);
+        font-size: 30px;
+    }
     .container {
-        width: 60%;
+        margin: 50px 0;
         .cards {
             display: flex;
             flex-wrap: wrap;     
             .card {
-                width: calc(100% / 3 - 10px);
+                width: calc(100% / #{$cardNumber} - 10px);
                 margin: 5px;
                 position: relative;
                 .layover {
@@ -34,9 +37,11 @@ main {
                     opacity: 1;
                     cursor: pointer;
                 }
+                img {
+                    display: block;
+                }
             }
         }
-    }
-    
+    }  
 }
 

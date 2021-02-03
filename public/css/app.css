@@ -30,6 +30,10 @@ body {
   font-weight: 700;
 }
 
+.container {
+  width: 70%;
+}
+
 header {
   background-color: white;
   text-align: center;
@@ -45,13 +49,16 @@ img {
 main {
   background-image: url("../img/fondo-pag-speciali.jpg");
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   display: flex;
   justify-content: center;
 }
+main h3 {
+  color: #055477;
+  font-size: 30px;
+}
 main .container {
-  width: 60%;
+  margin: 50px 0;
 }
 main .container .cards {
   display: flex;
@@ -81,4 +88,40 @@ main .container .cards .card .layover a {
 main .container .cards .card:hover .layover {
   opacity: 1;
   cursor: pointer;
+}
+main .container .cards .card img {
+  display: block;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+footer .container {
+  margin-top: 50px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+}
+footer .container div {
+  width: calc(100% / 3);
+}
+footer .container div h3 {
+  color: #A7ADB7;
+}
+footer .container div p {
+  color: #A7ADB7;
+  font-size: 14px;
+}
+footer .container div ul {
+  list-style: none;
+  margin: 20px 0;
+  line-height: 25px;
+}
+footer .container div ul li a {
+  text-decoration: none;
+  color: #A7ADB7;
+  font-size: 14px;
 }

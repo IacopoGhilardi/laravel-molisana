@@ -15,7 +15,7 @@
         </section>
         <h3>LE CORTE</h3>
         <section class="cards">
-            @foreach ($lunga as $pasta)
+            @foreach ($corta as $pasta)
                 <div class="card">
                     <img src="{{ $pasta["src"] }}" alt="pasta-img">
                     <div class="layover">

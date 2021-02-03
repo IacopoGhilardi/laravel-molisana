@@ -153,3 +153,10 @@ Route::get('/', function () {
         "cortissima" => $cortissima
     ]);
 });
+
+
+Route::get('/product', function () {
+    return view('fettuccine', [
+        
+    ]);
+});
