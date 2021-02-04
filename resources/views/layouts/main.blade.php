@@ -3,27 +3,28 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <title>Laravel</title>
-
         <!-- css -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     </head>
 
     <body>
+        {{-- header --}}
         <header>
             <img src="{{ asset('img/marchio-sito-test.png') }}" alt="La Molisana">
             <ul class="list-inline">
-                <li><a href="#">HOME</a></li>
-                <li  class="active"><a href="#">PRODOTTI</a></li>
-                <li><a href="#">NEWS</a></li>
+                <li class=" {{ Route::currentRouteName() == 'home' ? 'active' : '' }}" ><a href=" {{ route('home') }} ">HOME</a></li>
+                <li  class=" {{ Route::currentRouteName() == 'prodotto' ? 'active' : '' }}"><a href=" {{ route('prodotto', ['id' => 0]) }} ">PRODOTTI</a></li>
+                <li class=" {{ Route::currentRouteName() == 'news' ? 'active' : '' }}" ><a href="#">NEWS</a></li>
             </ul>
         </header>
 
+        {{-- main  --}}
         <main>
             @yield('main')
         </main>
-
+        
+        {{-- footer --}}
         <footer>
             <div class="container">
                 <div>

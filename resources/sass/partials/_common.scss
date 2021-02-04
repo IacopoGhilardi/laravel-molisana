@@ -5,7 +5,6 @@
 }
 
 body {
-    // background-color: $bgColor;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -16,10 +15,10 @@ body {
         padding: 10px;
         margin: 0 5px;
         &.active {
-            background-color: #B2E5FC;
+            background-color: $productBackground;
         }
         &:hover {
-            background-color: #B2E5FC;
+            background-color: $productBackground;
         }
         a {
             text-decoration: none;
@@ -32,4 +31,15 @@ body {
 
 .container {
     width: 70%;
+}
+
+
+@media screen and (min-width: 480px) {
+    $colNumber: 1;
+}
+@media screen and (min-width: 768px) {
+    $colNumber: 2;
+}
+@media screen and (min-width: 1200px) {
+    $colNumber: 3;
 }

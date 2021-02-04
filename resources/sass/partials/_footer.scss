@@ -9,7 +9,8 @@ footer {
         position: relative;
         display: flex;
         div {
-            width: calc(100% / 3);
+            width: calc(100% / #{$colNumber});
+            padding-right: 10px;
             h3{ 
                 color: $footerColor;
             }
