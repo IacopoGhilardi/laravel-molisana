@@ -39,6 +39,6 @@ Route::get('/product/{id}', function ($id) {
     $data = config('pasta');
 
     return view('products', [
-        "id" => $data[$id]
+        "id" => $data[$id],
     ]);
 })->name('prodotto');
